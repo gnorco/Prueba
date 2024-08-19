@@ -1,0 +1,11 @@
+from PIL import Image
+print("Bienvenido")
+print("Ingrese una ruta de imagen")
+ruta = input("---> ")
+img = Image.open(ruta)
+img.show()
+lista = ruta.split("/")
+print(f"Nombre del archivo : {lista[-1]}")
+print(f"Extension : {img.format}")
+print(f"Resolucion : {img.size}")
+print(f"La ruta de la imagen es : {ruta}")
